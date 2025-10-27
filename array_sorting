@@ -1,0 +1,25 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main() {
+  int arr[] = {74, 600, 280, 50, 40, 380 };
+  //Calculate the number of elements in the array
+    int n = sizeof(arr) / sizeof(arr[0]);
+    std::cout <<"\n Received Data: ";
+     for (int i = 0; i < n; i++) {
+        std::cout << arr[i] << " ";
+    }
+    // Sort the array in ascending order
+    std::sort(arr, arr + n);
+    
+    std::cout <<"\n Sorted Data: ";
+    int sum =0; 
+    // Print the sorted array
+    for (int i = 0; i < n; i++) {
+        std::cout << arr[i] << " ";
+        sum += arr[i];
+    }
+    std::cout <<"\n Total sum: "<< sum<<std::endl;
+  return 0;
+}
