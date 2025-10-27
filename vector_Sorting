@@ -1,0 +1,18 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  std::vector<int> input = {100, 400, 292, 264, 100, 1414, 434, 612};
+  sort(input.begin(), input.end());
+  int sum =0;
+  for (auto ele : input) {
+    sum += ele;
+    std::cout <<ele<<std::endl; 
+  }
+  std::cout <<"Total : "<<sum<<std::endl; 
+  return 0;
+}
