@@ -3,7 +3,8 @@
 using namespace std;
 
 int main() {
-  int arr[] = {74, 600, 280, 50, 40, 380 };
+  int arr[] = {74, 600, 280, 50, 40, 380, 300, 200};
+  //int arr1[] = {-74, -50, -40};
   //Calculate the number of elements in the array
     int n = sizeof(arr) / sizeof(arr[0]);
     std::cout <<"\n Received Data: ";
